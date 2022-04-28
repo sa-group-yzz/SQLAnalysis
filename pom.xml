@@ -75,6 +75,23 @@
             <version>1.2.9</version>
         </dependency>
 
+        <!--local jar-->
+        <dependency>
+            <groupId>edu.usc.sql</groupId>
+            <artifactId>string</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/lib/NewStringAnalysis.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>edu.usc.sql</groupId>
+            <artifactId>graphs</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/lib/graphs.jar</systemPath>
+        </dependency>
+
     </dependencies>
 
 </project>
