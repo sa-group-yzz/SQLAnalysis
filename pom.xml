@@ -100,7 +100,7 @@
             <artifactId>string</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/lib/NewStringAnalysis.jar</systemPath>
+            <systemPath>${pom.basedir}/src/main/lib/NewStringAnalysis.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -108,7 +108,7 @@
             <artifactId>graphs</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/lib/graphs.jar</systemPath>
+            <systemPath>${pom.basedir}/src/main/lib/graphs.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -116,7 +116,7 @@
             <artifactId>sand</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/lib/sand-0.0.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${pom.basedir}/src/main/lib/sand-0.0.1-SNAPSHOT.jar</systemPath>
         </dependency>
 
     </dependencies>
