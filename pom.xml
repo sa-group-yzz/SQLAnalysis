@@ -13,13 +13,6 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>localrepository</id>
-            <url>file://${project.basedir}/lib</url>
-        </repository>
-    </repositories>
-
     <build>
         <pluginManagement>
             <plugins>
@@ -107,7 +100,7 @@
             <artifactId>string</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/NewStringAnalysis.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/lib/NewStringAnalysis.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -115,7 +108,7 @@
             <artifactId>graphs</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/graphs.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/lib/graphs.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -123,7 +116,7 @@
             <artifactId>sand</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/sand-0.0.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/lib/sand-0.0.1-SNAPSHOT.jar</systemPath>
         </dependency>
 
     </dependencies>
