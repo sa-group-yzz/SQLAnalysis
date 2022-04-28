@@ -19,10 +19,13 @@ public class Case1 {
         ResultSet rs = stmt.executeQuery("select id,name,price from cars where price > 1000 limit 1");
         int id = rs.getInt(0);
         String name = rs.getString(1);
-        if(id < 10 && name.equals("car")){
+        int price = rs.getInt(2);
+        if(price < 500){
             String new_name = rs.getString(1);
             String query = "INSERT ... " + new_name + id;
             stmt.execute(query);
+        }else {
+            System.out.println(name + " " + price);
         }
         rs.close();
         stmt.close();
