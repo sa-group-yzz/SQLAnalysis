@@ -9,7 +9,7 @@ import java.util.List;
 
 public class BaseTest {
     @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
+    public static void setUpBeforeClass() {
 
         List<String> dir = new ArrayList<>();
         dir.add("target/test-classes");

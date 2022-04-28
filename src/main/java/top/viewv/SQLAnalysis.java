@@ -10,13 +10,11 @@ import java.util.List;
 import java.util.Set;
 
 public class SQLAnalysis {
-    private String sql;
     private SQLStatement statement;
     private SQLStatementParser parser;
     private MySqlSchemaStatVisitor visitor;
 
     public SQLAnalysis(String sql) {
-        this.sql = sql;
         parser = new SQLStatementParser(sql);
         statement = parser.parseStatement();
         visitor = new MySqlSchemaStatVisitor();
@@ -27,11 +25,11 @@ public class SQLAnalysis {
         return visitor.getTables().keySet();
     }
 
-    List<TableStat.Condition> getConditions() {
+    public List<TableStat.Condition> getConditions() {
         return visitor.getConditions();
     }
 
-     Collection<TableStat.Column> getColumns() {
+     public Collection<TableStat.Column> getColumns() {
         return visitor.getColumns();
     }
 }

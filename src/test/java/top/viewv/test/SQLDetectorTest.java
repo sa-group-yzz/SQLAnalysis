@@ -14,7 +14,7 @@ public class SQLDetectorTest extends BaseTest {
     public void test() {
         SQLDetector detector = new SQLDetector();
         Set<Silica> silicas = detector.detect(new HashSet<>(Arrays.asList("top.viewv.testcase.Case1")));
-        for (Silica silica : silicas) {
+        for (Silica silica : silicas){
             System.out.println(silica);
         }
     }

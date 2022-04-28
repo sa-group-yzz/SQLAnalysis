@@ -14,15 +14,18 @@ public class Case1 {
         Class.forName(JDBC_DRIVER);
         System.out.println("Connecting to database...");
         conn = DriverManager.getConnection(DB_URL, USER, PASS);
+        System.out.println("Creating statement...");
         stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT id,name,price from cars where price >=10000 limit 1");
-        rs.next();
-        int a;
-        int b = args.length;
-        if(rs.getInt(3) > 100) {
-            a = 1;
-        } else {
-            a = b + 1;
+        ResultSet rs = stmt.executeQuery("select id,name,price from cars where price > 1000 limit 1");
+        int id = rs.getInt(0);
+        String name = rs.getString(1);
+        if(id < 10 && name.equals("car")){
+            String new_name = rs.getString(1);
+            String query = "INSERT ... " + new_name + id;
+            stmt.execute(query);
         }
+        rs.close();
+        stmt.close();
+        conn.close();
     }
 }
