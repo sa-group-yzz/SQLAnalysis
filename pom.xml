@@ -71,6 +71,18 @@
         </dependency>
 
         <dependency>
+            <groupId>ca.mcgill.sable</groupId>
+            <artifactId>soot</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.29</version>
@@ -95,7 +107,7 @@
             <artifactId>string</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${pom.basedir}/lib/NewStringAnalysis.jar</systemPath>
+            <systemPath>${project.basedir}/lib/NewStringAnalysis.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -103,7 +115,7 @@
             <artifactId>graphs</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${pom.basedir}/lib/graphs.jar</systemPath>
+            <systemPath>${project.basedir}/lib/graphs.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -111,7 +123,7 @@
             <artifactId>sand</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${pom.basedir}/lib/sand-0.0.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/lib/sand-0.0.1-SNAPSHOT.jar</systemPath>
         </dependency>
 
     </dependencies>
