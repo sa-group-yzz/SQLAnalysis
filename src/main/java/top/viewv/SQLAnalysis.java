@@ -29,7 +29,7 @@ public class SQLAnalysis {
         return visitor.getConditions();
     }
 
-     public Collection<TableStat.Column> getColumns() {
+    public Collection<TableStat.Column> getColumns() {
         return visitor.getColumns();
     }
 }
